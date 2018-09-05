@@ -9,15 +9,17 @@ var fn = function (number) {
     var n = arr.reverse().join('')
     // 比较是否相等
     if (number == n) {
-        console.log(number, n)
+        // console.log('比较的number和n的值', number, n)
         return true
     } else {
-        console.log(number, n)
+        // console.log('比较的number和n的值', number, n)
         return false
     }
 }
 
-console.log(fn(21))
+console.log('参数12321 返回值为', fn(12321))
+console.log('参数1221 返回值为', fn(1221))
+console.log('参数12581 返回值为', fn(12581))
 
 // 从排序好的数组中删除重复的数，返回新数组的长度
 
@@ -30,4 +32,6 @@ var filterArr = function (arr) {
     var l = newArr.length
     return l
 }
-console.log(filterArr(['aaa',' ','asd']))
+
+console.log(`参数['aaa',' ','asd'] 返回值为`, filterArr(['aaa',' ','asd']))
+console.log(`参数['aaa','aaa','asd'] 返回值为`, filterArr(['aaa','aaa','asd']))
